@@ -1,0 +1,149 @@
+.animate-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlide 0.7s ease forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.register-btn {
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
+.login-btn {
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* RED PROGRESS BAR */
+.custom-progress {
+  height: 12px;
+  background: #f8d7da;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.custom-progress-bar {
+  height: 100%;
+    background: linear-gradient(90deg, #FF4B2B, #FF416C);
+  border-radius: 50px;
+  transition: width 0.6s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.6);
+}
+
+/* STEP CIRCLES */
+.step-wrapper {
+  position: relative;
+}
+
+.step-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #f8d7da;
+  border: 2px solid #dc3545;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #dc3545;
+  transition: all 0.4s ease;
+}
+
+.step-circle.active {
+  background: linear-gradient(135deg, #FF4B2B, #FF416C);
+  color: white;
+  transform: scale(1.1);
+ box-shadow: 0 0 15px rgba(255, 65, 108, 0.7);
+}
+
+.step-circle.completed {
+  background: linear-gradient(135deg, #FF4B2B, #FF416C);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 65, 108, 0.7);
+}
+
+.form-animation {
+  animation: fadeSlide 0.4s ease-in-out;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mini-card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.mini-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #FF4B2B, #FF416C);
+}
+
+.mini-card:hover {
+   transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 65, 108, 0.15);
+}
+
+.dashboard-card {
+ border-radius: 25px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.dashboard-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(90deg, #FF4B2B, #FF416C);
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #FF4B2B, #FF416C);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(90deg, #FF416C, #FF4B2B);
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 65, 108, 0.4);
+}
